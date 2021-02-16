@@ -7,7 +7,8 @@ import { schema } from './routes/graphql';
 const server = new ApolloServer({
 	// cors: true,
 	schema,
-	playground: process.env.NODE_ENV === 'development' ? true : false,
+	// playground: process.env.NODE_ENV === 'development' ? true : false,
+	playground: true,
 	introspection: true,
 	tracing: true,
 	uploads: false,
