@@ -1,0 +1,9 @@
+schema: ./generated/schema.graphql
+overwrite: true
+generates:
+  ./codegen/tmp/types.ts:
+    plugins:
+      - typescript
+  ./codegen/tmp/src/index.ts:
+    plugins:
+     - codegen/plugin.js

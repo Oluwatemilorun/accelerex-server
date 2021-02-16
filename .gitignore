@@ -1,0 +1,10 @@
+node_modules
+dist
+logs/
+production.env
+staging.env
+generated
+codegen/build-schema.js
+codegen/plugin.js
+codegen/tmp/types.ts
+codegen/tmp/src/index.ts

@@ -1,0 +1,64 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"module": "commonjs",
+		"outDir": "dist",
+		"removeComments": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es6",
+		"moduleResolution": "node",
+		"paths": {
+			"@resolvers/*": [
+				"src/resolvers/*"
+			],
+			"@middlewares/*": [
+				"src/middlewares/*"
+			],
+			"@validators/*": [
+				"src/validators/*"
+			],
+			"@models/*": [
+				"src/models/*"
+			],
+			"@shared/*": [
+				"src/shared/*"
+			],
+			"@daos/*": [
+				"src/daos/*"
+			],
+			"@db/*": [
+				"src/db/*"
+			],
+			"@services/*": [
+				"src/services/*"
+			],
+			"@config": [
+				"src/config"
+			],
+			"@server": [
+				"src/Server"
+			],
+		},
+		"types": [
+			// "src/@types"
+		],
+		"typeRoots": [
+			// "./src/@types",
+			"node_modules/@types"
+		]
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"spec/**/*.ts",
+		"src/index"
+	],
+	"exclude": [
+		"node_modules/*",
+	]
+}
