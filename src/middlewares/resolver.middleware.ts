@@ -9,16 +9,3 @@ export const CheckAuth: ResolverMiddleware<any, AppContext> = async (next, s, a,
 
 	return res;
 };
-
-export const AttachUserToRecord: ResolverMiddleware<any, AppContext> = async (next, s, a, c, i) => {
-	a = {
-		record: {
-			...a.record,
-			customer: c.user._id,
-		},
-	};
-
-	const res = await next(s, a, c, i);
-
-	return res;
-};
